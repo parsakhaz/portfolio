@@ -149,7 +149,7 @@ body[data-nav="true"]>#nav-toggle>.close {
     display: flex;
     gap: 12vmin;
     position: absolute;
-    left: 50%;
+    left: 15%;
     top: 50%;
     transform: translate(0%, -50%);
     user-select: none;
@@ -158,6 +158,16 @@ body[data-nav="true"]>#nav-toggle>.close {
 
 #image-track>.content {
     width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+
+    /* border: 1px solid rgb(77, 77, 77); */
+
+}
+
+#image-track>.content-wide {
+    width: 50vmin;
     height: 56vmin;
     object-fit: cover;
     object-position: 100% center;
@@ -235,7 +245,7 @@ body[data-nav="true"]>#nav-toggle>.close {
     font-family: 'Minecraft', sans-serif;
     letter-spacing: 0.15rem;
     line-height: 3.5rem;
-    color: rgb(27, 27, 27);
+    color: rgb(43, 43, 43);
     font-size: large;
     padding: 1rem 2rem;
 }
