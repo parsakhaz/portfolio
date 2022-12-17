@@ -36,7 +36,7 @@ nav {
     height: 50vh;
     width: 100%;
     position: absolute;
-    left: 25%;
+    left: 10%;
     margin: 0 auto;
     bottom: 0px;
     z-index: 1;
@@ -149,7 +149,7 @@ body[data-nav="true"]>#nav-toggle>.close {
     display: flex;
     gap: 12vmin;
     position: absolute;
-    left: 15%;
+    left: 20%;
     top: 50%;
     transform: translate(0%, -50%);
     user-select: none;
@@ -167,7 +167,7 @@ body[data-nav="true"]>#nav-toggle>.close {
 }
 
 #image-track>.content-wide {
-    width: 50vmin;
+    width: 60vmin;
     height: 56vmin;
     object-fit: cover;
     object-position: 100% center;
@@ -242,7 +242,7 @@ body[data-nav="true"]>#nav-toggle>.close {
 }
 
 .text-subtle {
-    font-family: 'Minecraft', sans-serif;
+    font-family: 'Artifika', sans-serif;
     letter-spacing: 0.15rem;
     line-height: 3.5rem;
     color: rgb(43, 43, 43);
@@ -289,10 +289,12 @@ body[data-nav="true"]>#nav-toggle>.close {
     }
 } */
 
+
+
 /* TODO nav is still screwed up on smaller screens then my desktops?
 html/black bg doesnt fully cover full screen? */
 
-@media only screen and (max-width: 925px) {
+@media only screen and (max-width: 690px) {
     .text-lead {
         font-size: large;
         line-height: 2rem;
@@ -309,27 +311,9 @@ html/black bg doesnt fully cover full screen? */
     } */
 }
 
-
-@media only screen and (max-width: 925px) {
+@media only screen and (max-width: 475px) {
     .text-lead {
-        font-size: small;
-        line-height: 2rem;
-    }
-
-    .text-subtle {
-        visibility: small;
-    }
-
-    /* display alternative navbar on smaller width views */
-
-    /* .input-cursor {
-        visibility: hidden;
-    } */
-}
-
-@media only screen and (max-width: 925px) {
-    .text-lead {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1rem;
     }
 

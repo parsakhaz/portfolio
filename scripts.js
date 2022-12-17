@@ -18,10 +18,10 @@ const handleOnMove = (e) => {
   const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
     maxDelta = window.innerWidth / 2;
 
-  const percentage = (mouseDelta / maxDelta) * -75, // 75% is the max when image-track is 15% from the left, 100% is max when image-track is 50% from the left
+  const percentage = (mouseDelta / maxDelta) * -80, // 75% is the max when image-track is 15% from the left, 100% is max when image-track is 50% from the left
     nextPercentageUnconstrained =
       parseFloat(track.dataset.prevPercentage) + percentage,
-    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -75); // 75% is the max when image-track is 15% from the left, 100% is max when image-track is 50% from the left
+    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -80); // 75% is the max when image-track is 15% from the left, 100% is max when image-track is 50% from the left
 
   track.dataset.percentage = nextPercentage;
 
@@ -78,7 +78,7 @@ function waitForMs(ms) {
 window.onload = () => {
   typeSentence("Hi, I'm Parsa, and this is my studio.", 'sentence').then(() => {
     typeSentence('Start learning more about me...', 'sentence-2').then(() => {
-      typeSentence('drag <-> to scroll', 'drag-to-scroll').then(() => {
+      typeSentence('drag to scroll', 'drag-to-scroll').then(() => {
         // document.getElementById('cursor').style.visibility = 'visible';
       });
     });
