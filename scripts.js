@@ -58,7 +58,7 @@ window.ontouchmove = (e) => handleOnMove(e.touches[0]);
 
 // typing effect code here
 
-async function typeSentence(sentence, eleRef, delay = 100) {
+async function typeSentence(sentence, eleRef, delay = 50) {
   const letters = sentence.split('');
   const element = document.getElementById(eleRef);
   let i = 0;
